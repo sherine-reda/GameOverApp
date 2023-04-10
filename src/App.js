@@ -213,7 +213,16 @@ function App() {
         { path: "forgotPassword", element: <ForgotPassword /> },
         { path: "resetPassword", element: <ResetPassword saveUserData={saveUserData} /> },
         { path: "register", element: <Register /> },
+          {
+          path: "GameOverApp",
+          element: (
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          ),
+        },
         { path: "*", element: <Notfound /> },
+          
       ],
     },
   ]);
