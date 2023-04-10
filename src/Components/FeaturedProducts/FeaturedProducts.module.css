@@ -1,0 +1,35 @@
+.FeaturedProducts {
+}
+.img {
+  background: linear-gradient(110deg, #32383e 8%, #485058 18%, #32383e 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+  width: 100%;
+  height: 150px;
+  -webkit-animation: 1.5s shine linear infinite;
+}
+.spanLoader {
+  background: linear-gradient(110deg, #32383e 8%, #485058 18%, #32383e 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  /* width: 100%; */
+  animation: 1.5s shine2 linear infinite;
+  -webkit-animation: 1.5s shine2 linear infinite;
+}
+@keyframes shine {
+  0% {
+    background-position: -48px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@keyframes shine2 {
+  0% {
+    background-position: -0px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}

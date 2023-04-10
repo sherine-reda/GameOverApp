@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+:root
+{
+    --main-color:#272B30;
+    --dark-color:#1c1e22;
+    --light-color:#32383e;
+    --text-color:#aaa;
+    --btn-color:#4799eb;
+    --border-shadow: 1px solid rgba(28,28,28,.6); 
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --second-font-family:'Xanh Mono', monospace;
+    --rating-color:#ffc908;
+
+}
+
+body{
+    font-family: var(--font-family) !important;
+   background-color: var(--main-color);
+   
+    
+}
+ul{
+    list-style: none;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--text-color) !important;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.bg-btn-light{
+    background-color: #3a3f44 !important;
+}
+.bg-loading
+{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.bg-dark
+{
+    background-color: var(--dark-color);
+}
+.btn-blue{
+    --bs-btn-color: var(--btn-color);
+    --bs-btn-border-color: var(--btn-color);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: var(--btn-color);
+    --bs-btn-focus-shadow-rgb: 13,202,240;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: var(--btn-color);
+    --bs-btn-active-border-color: var(--btn-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--btn-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--btn-color);
+    --bs-gradient: none;
+   
+}
+.bg-blue{
+    background-color: var(--btn-color);
+}
+.text-blue{
+    color: var(--btn-color) !important;
+}
+.border-bottom-shadow{
+    border-bottom:var(--border-shadow)
+}
+.font-nav-logo{
+    font-family: var(--second-font-family);
+}
+.game {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+  .game:hover {
+    border: 0;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
